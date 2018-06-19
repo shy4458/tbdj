@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--TextInputLayout样式-->
+    <style name="MyStyleHint"> 
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorControlActivated">@android:color/holo_orange_dark</item>
+    </style>
+
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- fromAlpha和toAlpha是起始透明度和结束时透明度 -->
+    <!--startOffset 动画延迟的时间，多久后开始执行动画效果，int型，毫秒为单位。-->
+    <!--duration 动画的时长，int类型，以毫秒为单位，默认为300毫秒。-->
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:startOffset="800"
+        android:duration="500"/>
+
+</set>

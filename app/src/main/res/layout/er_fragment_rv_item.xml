@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/er_fragment_tuijian_rv_item_jz"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </cn.jzvd.JZVideoPlayerStandard>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">l
+
+            <ImageView
+                android:id="@+id/er_fragment_tuijian_rv_item_touxiang"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/er_fragment_ic_tx" />
+
+            <TextView
+                android:id="@+id/er_fragment_tuijian_rv_item_leixing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="奇闻奇事" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/er_fragment_tuijian_rv_item_biaoqian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="#豪车" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:background="@drawable/er_fragment_ic_zan">
+
+            <TextView
+                android:id="@+id/er_fragment_tuijian_rv_item_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="456" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:background="@drawable/er_fragment_ic_pinglun">
+
+            <TextView
+                android:id="@+id/er_fragment_tuijian_rv_item_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="456" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/er_fragment_tuijian_rv_item_gengduo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:background="@drawable/er_fragment_ic_gengduo" />
+
+    </LinearLayout>
+
+</LinearLayout>

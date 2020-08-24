@@ -3,7 +3,18 @@
     package="com.sx">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- NFC权限声明 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
     <application
+        android:name=".framework.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_app"
         android:label="@string/app_name"
@@ -11,18 +22,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:name=".ui.activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- TECH_DISCOVERED类型的nfc -->
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+            <!-- 后设资源  调用自己建立的文件夹xml中的文件 -->
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+
         </activity>
 
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".ui.activity.aaActivity" />
+        <activity android:name=".ui.activity.HomeActivity" />
+        <activity android:name=".ui.activity.Fab1Activity" />
+        <activity android:name=".ui.activity.Fab2Activity" />
+        <activity android:name=".ui.activity.EventActivity" />
+        <activity android:name=".ui.activity.ZhongActivity" />
     </application>
 
 </manifest>

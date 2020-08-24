@@ -1,4 +1,6 @@
-package com.sx.retorfit2;
+package com.sx.framework.retorfit2;
+
+import com.sx.presenter.Retrofit2Service;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -18,20 +20,21 @@ import retrofit2.Retrofit;
 
 public class HttpRetrofit {
 
-    private static final String BASEURL = "http://v.juhe.cn/";
+    private static final String BASEURL = "http://cyfytest.beikongyun.com/";
+//    private static final String BASEURL = "http://v.juhe.cn/";
 
     private static OkHttpClient client = new OkHttpClient.Builder()
             .cookieJar(new CookieJarUtil())
-//            .addNetworkInterceptor(new Interceptor() {
-//                @Override
-//                public Response intercept(Chain chain) throws IOException {
-//                    Request request = chain.request()
-//                            .newBuilder()
-//                            .addHeader("name", "key")
-//                            .build();
-//                    return chain.proceed(request);
-//                }
-//            })
+            .addNetworkInterceptor(new Interceptor() {
+                @Override
+                public Response intercept(Chain chain) throws IOException {
+                    Request request = chain.request()
+                            .newBuilder()
+                            .addHeader("Tag", "app")
+                            .build();
+                    return chain.proceed(request);
+                }
+            })
             .build();
 
     private static Retrofit retrofir = new Retrofit.Builder()
@@ -43,6 +46,7 @@ public class HttpRetrofit {
         Retrofit2Service httpSercice = retrofir.create(Retrofit2Service.class);
         return httpSercice;
     }
+
     static class CookieJarUtil implements CookieJar {
 
         private List<Cookie> cookie = null;

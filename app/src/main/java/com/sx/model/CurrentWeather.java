@@ -1,4 +1,4 @@
-package com.sx;
+package com.sx.model;
 
 /***       Author  shy 
  *         Time   2018/6/19 0019    15:07      */

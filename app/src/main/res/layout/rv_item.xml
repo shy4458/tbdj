@@ -10,34 +10,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center_vertical" />
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack" />
 
     <TextView
         android:id="@+id/tv_wd"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="@color/colorBlack" />
 
     <TextView
         android:id="@+id/tv_weather"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="@color/colorBlack" />
 
     <TextView
         android:id="@+id/tv_week"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="@color/colorBlack" />
 
     <TextView
         android:id="@+id/tv_wind"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="@color/colorBlack" />
 
 </LinearLayout>

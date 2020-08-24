@@ -6,9 +6,10 @@
 
 
     <color name="colorTitle">#ff7100</color>
-    <color name="colorRG">#e5e5e2</color>
+    <color name="colorRG">#ffffff</color>
     <color name="colorBj">#f5f6f3</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="main_rg_text_selector">#ff0000</color>
 </resources>

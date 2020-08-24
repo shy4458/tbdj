@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author JadynZhang
+ * @author shy
  * @version 1.0.0
  */
 public class BaseApplication extends Application {
